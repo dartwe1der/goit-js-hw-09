@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-const galleryContainer = document.querySelector('.ul-gallery');
+const galleryContainer = document.querySelector('.gallery');
 const markup = images
   .map(
     ({ preview, original, description }) => `
@@ -84,7 +84,7 @@ const markup = images
   .join('');
 galleryContainer.insertAdjacentHTML('beforeend', markup);
 
-new SimpleLightbox('.ul-gallery a', {
+new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
